@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <title> Sellylator </title>
+</head>
+<body>
+    <h1 class="selly">Sellylator</h1>
+    <div class="calculator">
+        <form name="calc">
+            <!--Only text can be typed in this input, will display 0 at the start-->
+            <input type="number" name="screen" class="screen" value="" placeholder="0" min="1" max="9">
+            <div class="buttons-grid">
+                <!--First row-->
+                <input type="button" onclick="resetVal()" class="button special-ops" name="reset" value="AC"></input>
+                <input type="button" onclick="avg()" class="button special-ops" name="average" value="AVG"></input>
+                <input type="button" onclick="operation('modulo')" class="button special-ops" name="modulo" value="Mod"></input>
+                <input type="button" onclick="operation('division')" class="button ops" name="division" value="/"></input>
+                <!--Second row-->
+                <input type="button" onclick="modifyValue(value)" class="button " name="7" value="7"></input>
+                <input type="button" onclick="modifyValue(value)" class="button " name="8" value="8"></input>
+                <input type="button" onclick="modifyValue(value)" class="button " name="9" value="9"></input>
+                <input type="button" onclick="operation('multiplication')" class="button ops" name="multiplication" value="x"></input>
+                <!--Third row-->
+                <input type="button" onclick="modifyValue(value)" class="button " name="4" value="4"></input>
+                <input type="button" onclick="modifyValue(value)" class="button " name="5" value="5"></input>
+                <input type="button" onclick="modifyValue(value)" class="button " name="6" value="6"></input>
+                <input type="button" onclick="operation('subtraction')" class="button ops" name="subtraction" value="-"></input>
+                <!--Fourth row-->
+                <input type="button" onclick="modifyValue(value)" class="button " name="1" value="1"></input>
+                <input type="button" onclick="modifyValue(value)" class="button " name="2" value="2"></input>
+                <input type="button" onclick="modifyValue(value)" class="button " name="3" value="3"></input>
+                <input type="button" onclick="operation('addition')" class="button ops" name="addition" value="+"></input>
+                <!--Fifth row-->
+                <input type="button" onclick="modifyValue(value)" class="button" name="zero" id="zero" value="0"></input>
+                <input type="button" onclick="modifyValue(value)" class="button " name="dot" value="."></input>
+                <input type="button" onclick="equals()" class="button ops" name="equal" value="="></input>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript"src="scripts/app.js"></script>
+</body>
+</html>
