@@ -4,4 +4,6 @@
 
 Sellylator is an ideal calculator for use within primary education, designed to calculate problems related to mathematics.
 
+This app will not only perform basic math operations: addition, subtraction, multiplication and division, but also calculate average and module.
+
 _**"42... there's just something about that number"**_
